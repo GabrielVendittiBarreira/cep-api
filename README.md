@@ -55,7 +55,7 @@ Pré-requisitos
 Passos para Configuração
 
 1. Clone o repositório:
-    git clone https://github.com/SEU_USUARIO/cep-api.git
+    git clone https://github.com/GabrielVendittiBarreira/cep-api.git
     cd cep-api
 
 2. Suba os containers Docker:
@@ -81,9 +81,6 @@ Contribuição:
 4. Push para a branch (git push origin feature/nova-feature)
 5. Abra um Pull Request
 
-Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
-
 
 ### Passos para Adicionar ao Git
 
@@ -101,7 +98,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para m
     git commit -m "Initial commit"
 
 5. Adicione o repositório remoto:
-    git remote add origin https://github.com/SEU_USUARIO/cep-api.git
+    git remote add origin https://github.com/GabrielVendittiBarreira/cep-api.git
 
 Faça o push dos arquivos para o repositório remoto:
     git push -u origin master
