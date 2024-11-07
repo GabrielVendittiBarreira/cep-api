@@ -32,14 +32,19 @@ cep-api/
 │   └── test/
 │       └── java/            
 │           ├── controller/
+│           │   ├── CepControllerTest.java
+│           │   └── CepControllerIntegrationTest.java
 │           ├── service/
+│           │   └── CepServiceTest.java
 │           ├── repository/
+│           │   └── CepLogRepositoryTest.java
 │           └── model/
+│               └── CepLogTest.java
 ├── .gitignore
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
-└── [README.md](http://_vscodecontentref_/3)
+└── README.md
 
 Configuração e Execução
 Pré-requisitos
