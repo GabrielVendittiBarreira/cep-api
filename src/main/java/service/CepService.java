@@ -23,8 +23,11 @@ public class CepService {
     private CepLogRepository cepLogRepository;
 
     private final String API_URL = "http://localhost:8080/cep/";
-    private final S3Client s3Client;
+    private S3Client s3Client;
     private final String bucketName;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     public CepService() {
         AwsBasicCredentials awsCreds = AwsBasicCredentials.create(
@@ -40,8 +43,19 @@ public class CepService {
         this.bucketName = System.getenv("AWS_S3_BUCKET_NAME");
     }
 
+    public void setRestTemplate(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
+
+    public void setCepLogRepository(CepLogRepository cepLogRepository) {
+        this.cepLogRepository = cepLogRepository;
+    }
+
+    public void setS3Client(S3Client s3Client) {
+        this.s3Client = s3Client;
+    }
+
     public String buscarCep(String cep) {
-        RestTemplate restTemplate = new RestTemplate();
         String response = restTemplate.getForObject(API_URL + cep, String.class);
 
         CepLog log = new CepLog();

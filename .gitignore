@@ -1,0 +1,25 @@
+# Maven
+/target
+!.mvn/wrapper/maven-wrapper.jar
+**/src/main/resources/application.properties
+
+# IntelliJ IDEA
+.idea
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# MacOS
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
